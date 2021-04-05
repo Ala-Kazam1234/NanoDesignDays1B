@@ -1,4 +1,4 @@
-U = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 5.png');
+U = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 5.png');   % edit file path(text in the quotations) to change where you are reading the files from
 Red = U(:,:,1);
 Green = U(:,:,2);
 Blue = U(:,:,3);
