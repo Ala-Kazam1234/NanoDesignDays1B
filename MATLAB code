@@ -1,4 +1,4 @@
-U = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Unknown.png');
+U = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 5.png');
 Red = U(:,:,1);
 Green = U(:,:,2);
 Blue = U(:,:,3);
@@ -8,7 +8,7 @@ Ru = mean(Red, 'all');
 Gu = mean(Green, 'all');
 Bu = mean(Blue, 'all');
 
-Unknown = [Ru,Gu,Bu];
+Unknown = [Ru,Gu,Bu]; % assigning value of unnown sample
 
 %--------------------
 
@@ -22,7 +22,7 @@ R1 = mean(Red1, 'all');
 G1 = mean(Green1, 'all');
 B1 = mean(Blue1, 'all');
 
-Sample1 = [R1,G1,B1];
+Sample1 = [R1,G1,B1]; % assigning value of sample 1-5 below 
 
 %--------------------
 
@@ -85,7 +85,49 @@ Sample5 = [R5,G5,B5];
 
 
 
-Sample = [Sample1;Sample2;Sample3;Sample4;Sample5]
+Sample = [Sample1;Sample2;Sample3;Sample4;Sample5]; % creating a matrix containing all of the RGB values for our samples
 
+DifRed = Sample(:,1) - Unknown(1);
+DifGreen = Sample(:,2) - Unknown(2);
+DifBlue = Sample(:,3) - Unknown(3);
 
+Diference = [DifRed, DifGreen, DifBlue];
 
+PercentDif = abs(Diference./Sample)*100; % calculating percent difference from sample value to known values for each RBG indivudually in a matrix
+
+PercentDif = sum(PercentDif, 2); % summing percent difference
+
+[M,I] = min(PercentDif);
+A = [M,I];
+a = A(1); % a is percent difernce broken into a usable value
+
+switch I % switch case to output which case it is
+    case 1
+        disp('Diabetes not found')
+        disp('Most similar to sample 1')
+        disp ("Concentration of 0 mMol +/- " + num2str(a) + "% Concentration")
+
+    case 2
+        disp('Diabetes not found')
+        disp('Most similar to sample 2')
+        disp ("Concentration of 2.876 +/- " + num2str(a*2.876/100)  + " mMol")
+        
+    case 3
+        disp('Diabetes not found')
+        disp('Most similar to sample 3')
+        disp ("Concentration of 5.752 +/- " + num2str(a*5.752/100) + " mMol")
+       
+    case 4
+        disp('Pre Diabetes found')
+        disp('Most similar to sample 4')
+        disp ("Concentration of 8.628 +/- " + num2str(a*8.628/100) + " mMol")
+        
+    case 5
+        disp('Diabetes found')
+        disp('Most similar to sample 5')
+        disp ("Concentration of 11.504 +/- " + num2str(a*11.504/100) + " mMol")
+        
+end
+        
+       
+        
