@@ -1,0 +1,91 @@
+U = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Unknown.png');
+Red = U(:,:,1);
+Green = U(:,:,2);
+Blue = U(:,:,3);
+
+
+Ru = mean(Red, 'all');
+Gu = mean(Green, 'all');
+Bu = mean(Blue, 'all');
+
+Unknown = [Ru,Gu,Bu];
+
+%--------------------
+
+One = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 1.png');
+Red1 = One(:,:,1);
+Green1 = One(:,:,2);
+Blue1 = One(:,:,3);
+
+
+R1 = mean(Red1, 'all');
+G1 = mean(Green1, 'all');
+B1 = mean(Blue1, 'all');
+
+Sample1 = [R1,G1,B1];
+
+%--------------------
+
+Two = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 2.png');
+Red2 = Two(:,:,1);
+Green2 = Two(:,:,2);
+Blue2 = Two(:,:,3);
+
+
+R2 = mean(Red2, 'all');
+G2 = mean(Green2, 'all');
+B2 = mean(Blue2, 'all');
+
+Sample2 = [R2,G2,B2];
+
+%--------------------
+
+Three = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 3.png');
+Red3 = Three(:,:,1);
+Green3 = Three(:,:,2);
+Blue3 = Three(:,:,3);
+
+
+R3 = mean(Red3, 'all');
+G3 = mean(Green3, 'all');
+B3 = mean(Blue3, 'all');
+
+Sample3 = [R3,G3,B3];
+
+%--------------------
+
+Four = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 4.png');
+Red4 = Four(:,:,1);
+Green4 = Four(:,:,2);
+Blue4 = Four(:,:,3);
+
+
+R4 = mean(Red4, 'all');
+G4 = mean(Green4, 'all');
+B4 = mean(Blue4, 'all');
+
+Sample4 = [R4,G4,B4];
+
+%--------------------
+
+Five = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 5.png');
+Red5 = Five(:,:,1);
+Green5 = Five(:,:,2);
+Blue5 = Five(:,:,3);
+
+
+R5 = mean(Red5, 'all');
+G5 = mean(Green5, 'all');
+B5 = mean(Blue5, 'all');
+
+Sample5 = [R5,G5,B5];
+
+%--------------------
+
+
+
+
+Sample = [Sample1;Sample2;Sample3;Sample4;Sample5]
+
+
+
