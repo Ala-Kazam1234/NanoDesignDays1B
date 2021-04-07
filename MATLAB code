@@ -1,4 +1,4 @@
-U = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 5.png');   % edit file path(text in the quotations) to change where you are reading the files from
+U = imread('samples/unknown/unknown_sample_1.png');   % edit file path(text in the quotations) to change where you are reading the files from
 Red = U(:,:,1);
 Green = U(:,:,2);
 Blue = U(:,:,3);
@@ -12,7 +12,7 @@ Unknown = [Ru,Gu,Bu]; % assigning value of unnown sample
 
 %--------------------
 
-One = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 1.png');
+One = imread('samples/Sample 1.png');
 Red1 = One(:,:,1);
 Green1 = One(:,:,2);
 Blue1 = One(:,:,3);
@@ -26,7 +26,7 @@ Sample1 = [R1,G1,B1]; % assigning value of sample 1-5 below
 
 %--------------------
 
-Two = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 2.png');
+Two = imread('samples/Sample 2.png');
 Red2 = Two(:,:,1);
 Green2 = Two(:,:,2);
 Blue2 = Two(:,:,3);
@@ -40,7 +40,7 @@ Sample2 = [R2,G2,B2];
 
 %--------------------
 
-Three = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 3.png');
+Three = imread('samples/Sample 3.png');
 Red3 = Three(:,:,1);
 Green3 = Three(:,:,2);
 Blue3 = Three(:,:,3);
@@ -54,7 +54,7 @@ Sample3 = [R3,G3,B3];
 
 %--------------------
 
-Four = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 4.png');
+Four = imread('samples/Sample 4.png');
 Red4 = Four(:,:,1);
 Green4 = Four(:,:,2);
 Blue4 = Four(:,:,3);
@@ -68,7 +68,7 @@ Sample4 = [R4,G4,B4];
 
 %--------------------
 
-Five = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 5.png');
+Five = imread('samples/Sample 5.png');
 Red5 = Five(:,:,1);
 Green5 = Five(:,:,2);
 Blue5 = Five(:,:,3);
