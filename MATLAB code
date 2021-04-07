@@ -2,7 +2,7 @@ U = imread('C:\Users\JoshB\Downloads\Team 14\Team 14\Sample 5.png');   % edit fi
 Red = U(:,:,1);
 Green = U(:,:,2);
 Blue = U(:,:,3);
-
+%this is a test comment!
 
 Ru = mean(Red, 'all');
 Gu = mean(Green, 'all');
