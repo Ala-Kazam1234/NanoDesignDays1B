@@ -52,7 +52,7 @@ Design Parameters:
 
 
 ---
-### Refrences: 
+### References: 
 
 1.  University of Waterloo, 2021,“Chemistry Documentation”, Ideas Clinic Design Days NE102, lecture notes.
 1.  University of Waterloo, 2021, “Design Components”, Ideas Clinic Design Days NE102, lecture notes.
