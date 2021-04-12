@@ -1,8 +1,11 @@
 # Nano Design Days (1B)
 
-### Project repository for group 14’s 1B nano design days. A short, end-of-term project combining course material learned over 1B nano eng.
+### About: 
+Project repository for group 14’s 1B nano design days. A short, end-of-term project combining course material learned over 1B nano eng.
 
 This project explores the use of nanotechnology (gold nanoparticles) for blood glucose detection.
+
+---
 
 ### Chemistry Documentation:
 <br />
@@ -49,7 +52,7 @@ Design Parameters:
 
 
 ---
-Refrences: 
+### Refrences: 
 
 1.  University of Waterloo, 2021,“Chemistry Documentation”, Ideas Clinic Design Days NE102, lecture notes.
 1.  University of Waterloo, 2021, “Design Components”, Ideas Clinic Design Days NE102, lecture notes.
